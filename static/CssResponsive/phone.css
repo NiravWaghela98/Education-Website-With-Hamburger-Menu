@@ -1,0 +1,11 @@
+@media (min-width:375px) and (max-width:667px){
+    .first-section {
+        height: 27vh;
+    }
+    .box-main {
+        padding-top: 40px;
+    }
+    button{
+        text-align: center;
+    }
+}

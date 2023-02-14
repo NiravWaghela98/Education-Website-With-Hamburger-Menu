@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    title WeEducating - Transforming Online Education
+    block style
+      style
+        include ../static/CSS/home.css
+        include ../static/CssResponsive/responsive.css
+        
+       
+     
+  body
+    nav.navbar.background.height-nav-resp
+          ul.nav-list.visibility-class-resp
+            div#logo
+              img(src="/static/img/laptop.jpg" alt="logo")
+            li #[a(href="/home") Home]                                          
+            li #[a(href="#About") About]
+            li #[a(href="#services") Services]
+            li #[a(href="/contactus") Contact Us]
+          div.rightnav.visibility-class-resp
+            input(type="text" name ="Search" id="Search")
+            button( class="btn btn-sm") 
+              | Search
+          div.burger
+            div.line
+            div.line
+            div.line
+
+    section.background.first-section#About
+      div.box-main
+        div.firstHalf
+          p.text-big The future of Education is here
+          p.text-small In this world of 7 billion people we need to educate all of them. This is the future of an educated world and we are proud to say that the future of education is here 
+          div.button
+            button(class="btn btn-m")
+              | Subscribe
+            button(class="btn btn-m")
+              | Watch Video
+        div.secondHalf
+          img(src="../static/img/laptop.jpg", alt="laptop")
+
+    section.Section#services
+     div.paras 
+      p.sectionTag.text-big The End Of Your Search Is Here 
+      p.sectionsubTag.text-small Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque libero deleniti. Distinctio, id. Illo enim cumque itaque ullam deleniti ea voluptatibus dicta maiores, blanditiis sed modi? Ab, earum velit inventore dolores deserunt rem a reprehenderit praesentium aliquam autem sapiente! Fugit veniam officia blanditiis sed odio assumenda necessitatibus exercitationem accusantium quaerat repudiandae ab delectus libero dolores voluptates, ipsam dolorem facilis adipisci. Consectetur cumque assumenda laboriosam excepturi, beatae, debitis voluptate, deserunt placeat saepe culpa mollitia. Delectus quis aut nesciunt dolores voluptas cumque voluptatibus dolore non aperiam sit doloremque odit blanditiis beatae architecto temporibus excepturi optio, maiores commodi repellendus modi. Quod vel laboriosam est a at natus soluta ipsum perspiciatis eaque, ab vero, saepe dolores ratione cupiditate voluptatibus officia architecto pariatur quia. Corporis corrupti tempore quis, totam qui hic quod ullam iusto fuga quos possimus? Maxime expedita laboriosam tenetur tempore, necessitatibus architecto accusantium quod nemo nam laborum. Molestias porro natus maxime, saepe blanditiis accusantium doloremque suscipit! Rem aspernatur provident natus blanditiis reprehenderit qui quae id. Rem, doloremque nostrum error accusamus maxime iusto laboriosam eius iste recusandae omnis eligendi assumenda? Tenetur, vitae voluptatum quod nesciunt laboriosam obcaecati, cupiditate debitis, iure reprehenderit quis esse. Maiores sunt animi, unde impedit est sapiente quod quasi! Quos!
+     div.thumbnail 
+      img(src="https://source.unsplash.com/900x900/?coding,apple", alt="Laptop")
+
+    section.Section.Section-left
+     div.paras 
+      p.sectionTag.text-big We Provide The Best Education
+      p.sectionsubTag.text-small Up until 1976, education policies and implementation were determined legally by each of India's constitutional states. The 42nd amendment to the constitution in 1976 made education a 'concurrent subject'. From this point on the central and state governments shared formal responsibility for funding and administration of education. In a country as large as India, now with 28 states and eight union territories, this means that the potential for variations between states in the policies, plans, programs and initiatives for elementary education is vast. Periodically, national policy frameworks are created to guide states in their creation of state-level programs and policies. State governments and local government bodies manage the majority of primary and upper primary schools and the number of government-managed elementary schools is growing. Simultaneously the number and proportion managed by private bodies is growing. In 2005-6 83.13% of schools offering elementary education (Grades 1–8) were managed by government and 16.86% of schools were under private management (excluding children in unrecognised schools, schools established under the Education Guarantee Scheme and in alternative learning centers). Of those schools managed privately, one third are 'aided' and two thirds are 'unaided'. Enrolment in Grades 1–8 is shared between government and privately managed schools in the ratio 73:27. However in rural areas this ratio is higher (80:20) and in urban areas much lower (36:66).
+     div.thumbnail 
+      img(src="https://source.unsplash.com/900x900/?html,css", alt="Laptop")
+
+    section.Section
+     div.paras 
+      p.sectionTag.text-big Transforming India
+      p.sectionsubTag.text-small The higher education sector in India is  opening up. Government wants to increase the  gross enrolment  ratio  from  around  12%  at  present  to  30%  by  2020  and  will  need  around  800 additional  universities.  For  this,  government  is  promoting  private  investment  in  higher education by allowing the setting up of private universities. The Lovely Group of Jalandhar, a Family  Managed  Business,  sensed  this  opportunity  well  in  time  and  started  with  a  small Management and IT Institute in 2001. The sharp business acumen of the members of Lovely Family  and  clear  vision  for  business  resulted  in  the  establishment  of  Lovely  Professional University in 2005, which has now become the largest university in India in terms of number of students in a single campus The higher education sector in India is  opening up. Government wants to increase the  gross enrolment  ratio  from  around  12%  at  present  to  30%  by  2020  and  will  need  around  800 additional  universities.  For  this,  government  is  promoting  private  investment  in  higher education by allowing the setting up of private universities. The Lovely Group of Jalandhar, a Family  Managed  Business,  sensed  this  opportunity  well  in  time  and  started  with  a  small Management and IT Institute in 2001. The sharp business acumen of the members of Lovely Family  and  clear  vision  for  business  resulted  in  the  establishment  of  Lovely  Professional University in 2005, which has now become the largest university in India in terms of number of students in a single campus
+     div.thumbnail 
+      img(src="https://source.unsplash.com/900x900/?javascript", alt="Laptop")
+
+    
+
+  block content             
+  footer#footer
+        | Copyright © 2023 Educating People | All right reserved
+
+
+
+      
+  script
+    include ../static/JS/resp.js

@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title WeEducating - Transforming Online Education
+    block style
+      style
+        include ../static/CSS/home.css
+        include ../static/CssResponsive/responsive.css
+      
+     
+  body
+    nav.navbar.background.height-nav-resp
+          ul.nav-list.visibility-class-resp
+            div#logo
+              img(src="/static/img/laptop.jpg" alt="logo")
+            li #[a(href="/home") Home]                                          
+            li #[a(href="#About") About]
+            li #[a(href="#services") Services]
+            li #[a(href="/contactus") Contact Us]
+          div.rightnav.visibility-class-resp
+            input(type="text" name ="Search" id="Search")
+            button( class="btn btn-sm") 
+              | Search
+
+    div.container
+        h1 Contact Us
+        form(action="/contactus", method="post", class="myform")
+            input(type="text", class="myinput", name="name", placeholder="Enter your Name")
+            input(type="phone", class="myinput", name="phone", placeholder="Enter your Phone Number")
+            input(type="address", class="myinput", name="address", placeholder="Enter your Address")
+            textarea(name="text",class="myinput", cols="30", rows="10", placeholder="enter your concern")
+            button( class="btn btn-submit") 
+                | Submit
+        div.burger
+            div.line
+            div.line
+            div.line
+
+block content
+ooter#footer
+        | Copyright © 2023 Educating People | All right reserved
+
+
+script
+    include ../static/JS/resp.js

@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css', integrity='sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    title WeEducating
+    block scripts
+    block style
+     style
+       include ../static/CSS/signup.css
+body
+div.container
+  h1 Sign Up
+  form(action='/', method='post')
+    div.form-group
+      i.fas.fa-user.fa-fw
+      input(type='text', id='username', name='username', placeholder = "Type your Username", class='form-control')
+    div.form-group
+      i.fas.fa-envelope.fa-fw
+      input(type='email', id='email', name='email', placeholder= "Enter your Email ID", class='form-control')
+    div.form-group
+      i.fas.fa-key.fa-fw
+      input(type='password', id='password', name='password', placeholder = "Type Password", class='form-control')
+    button(type='submit', class='btn btn-primary') Sign Up
+  block content             
+  footer#footer 
+        | Copyright © 2023 Educating People | All right reserved
